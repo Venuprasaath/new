@@ -1,0 +1,53 @@
+/* Styling for Social Media Links */
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;  /* Initially hidden */
+    visibility: hidden;  /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Instagram specific styling */
+.social-icon.instagram img {
+    filter: invert(39%) sepia(65%) saturate(4185%) hue-rotate(326deg) brightness(98%) contrast(91%);
+}
+
+/* LinkedIn specific styling */
+.social-icon.linkedin img {
+    filter: invert(30%) sepia(79%) saturate(1762%) hue-rotate(184deg) brightness(95%) contrast(91%);
+}
+
+/* YouTube specific styling */
+.social-icon.youtube img {
+    filter: invert(21%) sepia(100%) saturate(4742%) hue-rotate(358deg) brightness(96%) contrast(92%);
+}
+
+/* Facebook specific styling */
+.social-icon.facebook img {
+    filter: invert(29%) sepia(100%) saturate(1489%) hue-rotate(204deg) brightness(97%) contrast(91%);
+}
+
+/* Visible state */
+.social-links.visible {
+    opacity: 1;
+    visibility: visible;
+}
